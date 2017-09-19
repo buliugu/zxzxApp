@@ -22,7 +22,6 @@ after_script:
 - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 before_deploy:
-- bash ci/.travis-android-license-bugfix.sh
 - echo y | android update sdk --no-ui --all --filter ${ANDROID_EMULATOR},${ANDROID_PKGS},build-tools-23.0.1
 - echo y | android update sdk -u -a -t tools
 - echo y | android update sdk -u -a -t platform-tools
