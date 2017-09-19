@@ -38,7 +38,7 @@ matrix:
           - extra-google-m2repository
           - addon-google_apis-google-16
       script:
-        - cd android && ./gradlew assembleDebug && ./gradlew assembleRelease
+        - cd android && ./gradlew assembleRelease
       deploy:
         provider: releases
         skip_cleanup: true
