@@ -1,4 +1,4 @@
-- language: android
+  language: android
   os: linux
   jdk: oraclejdk8
   before_cache:
